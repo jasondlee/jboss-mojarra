@@ -47,4 +47,4 @@ jobs:
         path: |
           ~/.m2
           ~/.local/share/containers
-        key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+        key: ${{ runner.os }}-m2-${{ matrix.java-version }}-${{ hashFiles('**/pom.xml') }}
